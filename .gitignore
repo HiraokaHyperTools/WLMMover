@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/WLMMover/Setup_WLMMover_*.exe
+/WLMMover/Tmpver.nsh

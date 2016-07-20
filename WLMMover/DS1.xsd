@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS1" targetNamespace="http://tempuri.org/DS1.xsd" xmlns:mstns="http://tempuri.org/DS1.xsd" xmlns="http://tempuri.org/DS1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS1" msprop:Generator_DataSetName="DS1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mig" msprop:Generator_UserTableName="Mig" msprop:Generator_RowDeletedName="MigRowDeleted" msprop:Generator_TableClassName="MigDataTable" msprop:Generator_RowChangedName="MigRowChanged" msprop:Generator_RowClassName="MigRow" msprop:Generator_RowChangingName="MigRowChanging" msprop:Generator_RowEvArgName="MigRowChangeEvent" msprop:Generator_RowEvHandlerName="MigRowChangeEventHandler" msprop:Generator_TablePropName="Mig" msprop:Generator_TableVarName="tableMig" msprop:Generator_RowDeletingName="MigRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Exp" msprop:Generator_UserColumnName="Exp" msprop:Generator_ColumnPropNameInRow="Exp" msprop:Generator_ColumnVarNameInTable="columnExp" msprop:Generator_ColumnPropNameInTable="ExpColumn" type="xs:string" />
+              <xs:element name="Wlm" msprop:Generator_UserColumnName="Wlm" msprop:Generator_ColumnPropNameInRow="Wlm" msprop:Generator_ColumnVarNameInTable="columnWlm" msprop:Generator_ColumnPropNameInTable="WlmColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Mig" />
+      <xs:field xpath="mstns:Wlm" />
+    </xs:unique>
+    <xs:unique name="Constraint3">
+      <xs:selector xpath=".//mstns:Mig" />
+      <xs:field xpath="mstns:Exp" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
